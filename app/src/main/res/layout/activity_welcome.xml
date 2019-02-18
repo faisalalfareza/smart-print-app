@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".partials.WelcomeActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/uperslider"
+    android:padding="60dp" >
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="@android:dimen/thumbnail_width"
+            android:layout_height="@android:dimen/thumbnail_height"
+
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+
+            android:visibility="visible"
+            android:background="@drawable/logo"
+
+            tools:layout_editor_absoluteX="158dp"
+            tools:layout_editor_absoluteY="145dp" />
+
+        <TextView
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Smart Printing"
+            android:layout_gravity="center"
+            android:fontFamily="Trebuchet MS"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:layout_marginTop="50dp" />
+
+        <customfonts.MyTextView
+            android:textColor="#FFFFFF"
+            android:layout_width="398dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="There is always giving you the best document printing experience. Your satisfaction is part of our satisfaction."
+            android:textAlignment="center"
+            android:fontFamily="Trebuchet MS"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="50dp" />
+
+    </LinearLayout>
+    
+</LinearLayout>

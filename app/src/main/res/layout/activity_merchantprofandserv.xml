@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgmain">
+
+    <com.faisalalfareza.smartprint.SliderLayout
+        android:id="@+id/slider"
+        style="@style/AndroidImageSlider_Oval_Black"
+        android:layout_width="match_parent"
+        android:layout_height="310dp"
+        android:background="#fff"
+        custom:pager_animation_span="1100">
+
+        <requestFocus />
+    </com.faisalalfareza.smartprint.SliderLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="310dp"
+        android:background="@drawable/uperslider">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"></include>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:padding="40dp">
+
+            <customfonts.MyTextView
+                android:id="@+id/currentMerchantTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Maestro Printing"
+                android:textColor="#fff"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <customfonts.MyTextView
+                android:id="@+id/currentMerchantMoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="Ensure Your Satisfaction With Modern Technology"
+                android:textColor="#ccffffff"
+                android:textSize="18dp" />
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/achievement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="visible"
+
+                android:paddingTop="10dp"
+                android:paddingBottom="25dp">
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentTop="true"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/countRatingReview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="4,4"
+                        android:textAlignment="center"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"
+                        android:textSize="30sp"
+                        android:layout_weight="1" />
+
+                    <customfonts.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="Rating and Reviews"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentTop="true"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/countTransaction"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="298rb"
+                        android:textAlignment="center"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"
+                        android:textSize="30sp"
+                        android:layout_weight="1"/>
+
+                    <customfonts.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="Transactions have been handled"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentTop="true"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/countDistance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="2,1km"
+                        android:textAlignment="center"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"
+                        android:textSize="30sp"
+                        android:layout_weight="1" />
+
+                    <customfonts.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="Distance from You"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--********SLIDER**********-->
+
+            <LinearLayout
+                android:id="@+id/currentLoc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="261dp"
+                android:background="@drawable/bg_list_rect"
+                android:elevation="4dp"
+                android:orientation="vertical">
+
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#00000000">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:padding="16dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <customfonts.MyTextView
+                                    android:id="@+id/whyTitle"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Why Choose Maestro ?"
+                                    android:textSize="15dp"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/text" />
+
+                                <customfonts.MyTextView
+                                    android:id="@+id/whyDetail"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="MAESTRO memberikan berbagai kemudahan, untuk memenuhi segala kebutuhan anda dalam percetakan media promosi dan lain-lain. Dengan harga yang terjangkau, hasil produk dengan kualitas terbaik, dilengkapi dengan kecanggihan teknologi mesin cetak,   serta tenaga kerja yang handal, bertanggung jawab dan professional dibidangnya. Menjadikan MAESTRO sebagai solusi tepat dan terbaik untuk anda."
+                                    android:textSize="@dimen/textsub"
+                                    android:textColor="@color/textsub"
+                                    android:layout_marginTop="6dp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:padding="16dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <customfonts.MyTextView
+                                    android:id="@+id/whereTitle"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Where can you find Maestro ?"
+                                    android:textSize="15dp"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/text" />
+
+                                <customfonts.MyTextView
+                                    android:id="@+id/whereDetail"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Jl. Brigjend Slamet Riadi No.127 A-D, Oro-oro Dowo, Klojen, Kota Malang, Jawa Timur 65119"
+                                    android:textSize="@dimen/textsub"
+                                    android:textColor="@color/textsub"
+                                    android:layout_marginTop="6dp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/haircut"
+                android:layout_below="@+id/currentLoc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/bg_list_rect"
+                android:elevation="4dp"
+                android:orientation="vertical">
+
+                <!--*****HAIR CUT********
+                android:layout_marginTop="261dp"-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/roundedrect"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <customfonts.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="PRODUCT(S) AND SERVICE(S)"
+                        android:textColor="@color/textsub"
+                        android:textSize="@dimen/text" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <customfonts.MyTextView
+                            android:id="@+id/resultCountOfService"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.2"
+                            android:gravity="right"
+                            android:text="7 Item(s)"
+                            android:textColor="@color/textsub"
+                            android:textSize="@dimen/text" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <com.faisalalfareza.smartprint.ExpandableHeightListView
+                    android:id="@+id/haircut_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </com.faisalalfareza.smartprint.ExpandableHeightListView>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>

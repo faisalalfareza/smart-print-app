@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgmain">
+
+    <com.faisalalfareza.smartprint.SliderLayout
+        android:id="@+id/slider"
+        style="@style/AndroidImageSlider_Oval_Black"
+        android:layout_width="match_parent"
+        android:layout_height="310dp"
+        custom:pager_animation_span="1100">
+
+        <requestFocus />
+    </com.faisalalfareza.smartprint.SliderLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="310dp"
+        android:background="@drawable/uperslider">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"></include>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:padding="40dp">
+
+            <customfonts.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Document Information"
+                android:textColor="#fff"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <customfonts.MyTextView
+                android:id="@+id/currentMerchantTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="Maestro Printing"
+                android:textColor="#ccffffff"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Selected Product & Service -->
+            <LinearLayout
+                android:id="@+id/docInfo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="261dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/bg_list_rect"
+                android:elevation="4dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/roundedrect"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <customfonts.MyTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="SET DOCUMENT INFORMATION"
+                            android:textColor="@color/textsub"
+                            android:textSize="@dimen/text" />
+
+                        <customfonts.MyTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Make sure your information match the document you are printing."
+                            android:textSize="@dimen/textsub"
+                            android:textColor="@color/text"
+                            android:layout_marginTop="6dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#00000000">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/selectedService"
+                            android:paddingTop="16dp"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <customfonts.MyTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Document Name"
+                                    android:textSize="16dp"
+                                    android:textColor="@color/textsub" />
+
+                                <EditText
+                                    android:id="@+id/inputDocTitle"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Give the order name for this document" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingTop="16dp"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <customfonts.MyTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Attachment File"
+                                    android:textSize="16dp"
+                                    android:textColor="@color/textsub" />
+
+                                <Button
+                                    android:id="@+id/inputDocAttachment"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="#ee5879"
+                                    android:textColor="#ffffff"
+                                    android:textStyle="bold"
+                                    android:text="Attach Your Document" />
+
+                                <customfonts.MyTextView
+                                    android:id="@+id/selectedFileName"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:textColor="@color/text"
+                                    android:textSize="15dp"
+                                    android:visibility="gone" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingTop="16dp"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <customfonts.MyTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Note(s)"
+                                    android:textSize="16dp"
+                                    android:textColor="@color/textsub" />
+
+                                <EditText
+                                    android:id="@+id/inputDocNote"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Give a note about your order to the printing service. Make them pay attention to every detail of your order .."
+                                    android:inputType="textMultiLine"
+                                    android:lines="8"
+                                    android:maxLines="10"
+                                    android:minLines="6"
+                                    android:scrollbars="vertical" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingTop="16dp"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:paddingBottom="16dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <customfonts.MyTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Good / must be finished before the date ?"
+                                    android:textSize="16dp"
+                                    android:textColor="@color/textsub" />
+
+                                <customfonts.MyTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="By default, the completion time will be set to ''today''. You can customize based on your needs through the settings below"
+                                    android:textSize="@dimen/textsub"
+                                    android:textColor="@color/text"
+                                    android:layout_marginTop="6dp" />
+
+                                <LinearLayout
+                                    android:layout_marginTop="10dp"
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1">
+
+                                        <CheckBox
+                                            android:id="@+id/inputDocFinishByDate"
+                                            android:text="Can be completed later, on"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"></CheckBox>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.7">
+
+                                        <Button
+                                            android:id="@+id/inputDocFinishDate"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="Select completion limit" />
+
+                                    </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!-- Bottom Action -->
+            <LinearLayout
+                android:layout_below="@+id/docInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="15dp">
+
+                <customfonts.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Make sure your settings match the document you are printing"
+                    android:textColor="#ccffffff"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:padding="15dp"
+                    android:layout_marginBottom="20dp" />
+
+                <Button
+                    android:id="@+id/submitDocInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ee5879"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:text="PRINT DOCUMENT" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>

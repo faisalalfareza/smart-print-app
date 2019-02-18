@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:paddingTop="30dp"
+    android:paddingLeft="40dp"
+    android:paddingRight="40dp"
+    android:scrollbars="vertical"
+    android:visibility="visible"
+    android:fillViewport="true"
+    android:background="@drawable/uperslider"
+    tools:context=".partials.MenuActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ProfileDescLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="40dp">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:layout_marginBottom="30dp">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical"
+                android:visibility="visible"
+                android:gravity="center">
+
+                <customfonts.MyTextView
+                    android:text="ABOUT SMART PRINT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_gravity="center_vertical" />
+
+                <customfonts.MyTextView
+                    android:text="''Only in one place, fast execution''"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ccffffff"
+                    android:textSize="20dp"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:text="What's Smart Print ?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <customfonts.MyTextView
+                android:text="It will show you the available merchant and you may print document(s) directly through this feature."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:textColor="#ccffffff"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:text="How About Our Vision ?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <customfonts.MyTextView
+                android:id="@+id/UserRoleDesc"
+                android:text="There is always giving you the best document printing experience. Your satisfaction is part of our satisfaction."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:textColor="#ccffffff"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:layout_marginBottom="30dp">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical"
+                android:visibility="visible"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/countRatingReview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="4,4"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:textSize="30sp"
+                    android:layout_weight="1" />
+
+                <customfonts.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="Rating and Reviews"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical"
+                android:visibility="visible"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/countTransaction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="298rb"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:textSize="30sp"
+                    android:layout_weight="1"/>
+
+                <customfonts.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="Transactions Handled"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical"
+                android:visibility="visible"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/countDistance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="2,1km"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:textSize="30sp"
+                    android:layout_weight="1" />
+
+                <customfonts.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="Distance from You"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="false"
+                    android:layout_centerVertical="true"
+                    android:text="Current Version"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:layout_weight="1" />
+
+                <customfonts.MyTextView
+                    android:text="Smart Print 9.2 | Stabil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="false"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="0.5"
+                    android:textColor="#ccffffff"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="false"
+                    android:layout_centerVertical="true"
+                    android:text="Contact Us"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:layout_weight="1" />
+
+                <customfonts.MyTextView
+                    android:text="info@smartprint.com"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="false"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="0.5"
+                    android:textColor="#ccffffff"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="false"
+                    android:layout_centerVertical="true"
+                    android:text="Address"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:layout_weight="1" />
+
+                <customfonts.MyTextView
+                    android:text="JL. Pondok Blimbing Indah Utara IV No.16 Blok A5, Kelurahan Polowijen, Kecamatan Blimbing, Kota Malang, Jawa Timur 65126 Jawa Timur - Kota"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="false"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="0.5"
+                    android:textColor="#ccffffff"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/action_close"
+            android:text="Okay, I understand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ee5879"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp" />
+
+    </LinearLayout>
+
+</ScrollView>

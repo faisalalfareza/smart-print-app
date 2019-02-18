@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="20dp"
+    android:scrollbars="none"
+    android:visibility="visible"
+    android:fillViewport="true"
+    android:background="@drawable/uperslider"
+    tools:context=".partials.MenuActivity"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/ProfileDescLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="40dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentTop="true"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    android:gravity="right"
+                    android:layout_weight="0.5">
+
+                    <customfonts.MyTextView
+                        android:id="@+id/UserName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fff"
+                        android:textSize="25dp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center_vertical" />
+
+                    <customfonts.MyTextView
+                        android:id="@+id/UserEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ccffffff"
+                        android:textSize="18dp" />
+
+                </LinearLayout>
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentTop="true"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    android:layout_weight="1"
+                    android:gravity="right">
+
+                    <customfonts.MyTextView
+                        android:id="@+id/UserRole"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/rect"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:padding="10dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <customfonts.MyTextView
+                android:id="@+id/UserRoleDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:textColor="#ccffffff"
+                android:textSize="18dp" />
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentTop="true"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    android:layout_weight="1"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:id="@+id/countRatingReview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="4,4"
+                        android:textAlignment="center"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"
+                        android:textSize="30sp"
+                        android:layout_weight="1" />
+
+                    <customfonts.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="Calculation for rating and reviews"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentTop="true"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp">
+
+                    <TextView
+                        android:id="@+id/countTransaction"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="298rb"
+                        android:textAlignment="center"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"
+                        android:textSize="30sp"
+                        android:layout_weight="1"/>
+
+                    <customfonts.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="Transactions have been handled"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Start: Menu -->
+
+        <LinearLayout
+            android:id="@+id/MenuLayoutTopUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ActionPrintDoc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/uperslider"
+                android:layout_weight="1"
+                android:padding="20dp"
+                android:layout_margin="5dp"
+                android:gravity="center">
+
+                <customfonts.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Print Document"
+                    android:textColor="#fff"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginTop="15dp" />
+
+                <customfonts.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="Upload your document and ready to be printed"
+                    android:textColor="#ccffffff"
+                    android:textSize="18dp"
+                    android:gravity="center" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ActionDocHistory"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/uperslider"
+                android:layout_weight="1"
+                android:padding="20dp"
+                android:layout_margin="5dp"
+                android:gravity="center">
+
+                <customfonts.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Document History"
+                    android:textColor="#fff"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginTop="15dp" />
+
+                <customfonts.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="History of Success, Waiting, and Failure Documents(s)"
+                    android:textColor="#ccffffff"
+                    android:textSize="18dp"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/MenuLayoutTopMerchant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ActionManageDoc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/uperslider"
+                android:padding="20dp"
+                android:layout_margin="5dp"
+                android:gravity="center">
+
+                <customfonts.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Manage Document"
+                    android:textColor="#fff"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginTop="15dp" />
+
+                <customfonts.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="Manage your document from selected user, and ready to be printed"
+                    android:textColor="#ccffffff"
+                    android:textSize="18dp"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/MenuLayoutBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ActionAboutApp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/uperslider"
+                android:layout_weight="1"
+                android:padding="20dp"
+                android:layout_margin="5dp"
+                android:gravity="center">
+
+                <customfonts.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="About Smart Print"
+                    android:textColor="#fff"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginTop="15dp" />
+
+                <customfonts.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="Upload your document and ready to be printed"
+                    android:textColor="#ccffffff"
+                    android:textSize="18dp"
+                    android:gravity="center" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ActionSettings"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/uperslider"
+                android:layout_weight="1"
+                android:padding="20dp"
+                android:layout_margin="5dp"
+                android:gravity="center">
+
+                <customfonts.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Logout"
+                    android:textColor="#fff"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginTop="15dp" />
+
+                <customfonts.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="History of Success, Waiting, and Failure Documents(s)"
+                    android:textColor="#ccffffff"
+                    android:textSize="18dp"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- End: Menu -->
+    </LinearLayout>
+</ScrollView>
+
+

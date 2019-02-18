@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgmain">
+
+    <com.faisalalfareza.smartprint.SliderLayout
+        android:id="@+id/slider"
+        style="@style/AndroidImageSlider_Oval_Black"
+        android:layout_width="match_parent"
+        android:layout_height="310dp"
+        custom:pager_animation_span="1100">
+
+        <requestFocus />
+    </com.faisalalfareza.smartprint.SliderLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="310dp"
+        android:background="@drawable/uperslider">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"></include>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:padding="40dp">
+
+            <customfonts.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Document Settings"
+                android:textColor="#fff"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <customfonts.MyTextView
+                android:id="@+id/currentMerchantTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="Maestro Printing"
+                android:textColor="#ccffffff"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--********SLIDER**********-->
+
+            <LinearLayout
+                android:id="@+id/currentLoc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="261dp"
+                android:background="@drawable/bg_list_rect"
+                android:elevation="4dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/roundedrect"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <customfonts.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="SELECTED PRODUCT AND SERVICE"
+                        android:textColor="@color/textsub"
+                        android:textSize="@dimen/text" />
+
+                </LinearLayout>
+
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#00000000">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/selectedService"
+                            android:padding="16dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_weight="0.5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <customfonts.MyTextView
+                                    android:id="@+id/title"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Selected Service"
+                                    android:textSize="16dp"
+                                    android:textColor="@color/textsub" />
+
+                                <customfonts.MyTextView
+                                    android:id="@+id/currentService"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Print Plotter Hitam Putih Atau Biasa"
+                                    android:textSize="20dp"
+                                    android:textColor="@color/text"
+                                    android:layout_marginTop="6dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_gravity="center"
+                                android:gravity="right">
+
+                                <customfonts.MyTextView
+                                    android:id="@+id/i"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="PPHPB"
+                                    android:textSize="20dp"
+                                    android:textColor="@color/textsub"
+                                    android:layout_gravity="center"
+                                    android:gravity="center" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:padding="16dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_weight="0.5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <customfonts.MyTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Selected Sub Service"
+                                    android:textSize="16dp"
+                                    android:textColor="@color/textsub" />
+
+                                <Spinner android:id="@+id/subService"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="false"
+                                    android:layout_centerVertical="true">
+                                </Spinner>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_gravity="center"
+                                android:gravity="right">
+
+                                <customfonts.MyTextView
+                                    android:id="@+id/subServiceCode"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="PPHPB"
+                                    android:textSize="20dp"
+                                    android:textColor="@color/textsub"
+                                    android:layout_gravity="center"
+                                    android:gravity="center" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/formSettings"
+                android:layout_below="@+id/currentLoc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/bg_list_rect"
+                android:elevation="4dp"
+                android:orientation="vertical">
+
+                <!--*****HAIR CUT********
+                android:layout_marginTop="261dp"-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/roundedrect"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <customfonts.MyTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="BUILD QUALITY"
+                            android:textColor="@color/textsub"
+                            android:textSize="@dimen/text" />
+
+                        <RadioGroup android:id="@+id/inputGroupBuildQuality" android:orientation="horizontal"
+                            android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="false" android:layout_centerVertical="true">
+
+                            <RadioButton android:text="Low Quality" android:id="@+id/inputLowQuality"
+                                android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingRight="10dp"></RadioButton>
+                            <RadioButton android:text="Standard Quality" android:id="@+id/inputStandardQuality" android:checked="true"
+                                android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingRight="10dp"></RadioButton>
+                            <RadioButton android:text="High Quality" android:id="@+id/inputHighQuality"
+                                android:layout_width="wrap_content" android:layout_height="wrap_content"></RadioButton>
+
+                        </RadioGroup>
+
+                        <customfonts.MyTextView
+                            android:id="@+id/qualityDesc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Doing low quality printing, will make the results worse than the original, but fast and cheap."
+                            android:textSize="@dimen/textsub"
+                            android:textColor="@color/text"
+                            android:layout_marginTop="6dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#00000000"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:padding="16dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <customfonts.MyTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Printed Page"
+                                    android:textSize="16dp"
+                                    android:textColor="@color/textsub" />
+
+                                <Spinner android:id="@+id/printedPage"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="false"
+                                    android:layout_centerVertical="true">
+                                </Spinner>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <customfonts.MyTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Sides of Print"
+                                    android:textSize="16dp"
+                                    android:textColor="@color/textsub" />
+
+                                <Spinner android:id="@+id/sidesOfPrint"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="false"
+                                    android:layout_centerVertical="true">
+                                </Spinner>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:padding="16dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <customfonts.MyTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Paper Size"
+                                    android:textSize="16dp"
+                                    android:textColor="@color/textsub" />
+
+                                <Spinner android:id="@+id/paperSize"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="false"
+                                    android:layout_centerVertical="true">
+                                </Spinner>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <customfonts.MyTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Paper Margin"
+                                    android:textSize="16dp"
+                                    android:textColor="@color/textsub" />
+
+                                <Spinner android:id="@+id/paperMargin"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="false"
+                                    android:layout_centerVertical="true">
+                                </Spinner>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:padding="16dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <customfonts.MyTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Orientation"
+                                    android:textSize="16dp"
+                                    android:textColor="@color/textsub" />
+
+                                <Spinner android:id="@+id/orientation"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="false"
+                                    android:layout_centerVertical="true">
+                                </Spinner>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <customfonts.MyTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Page Per Sheet"
+                                    android:textSize="16dp"
+                                    android:textColor="@color/textsub" />
+
+                                <Spinner android:id="@+id/pagePerSheet"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="false"
+                                    android:layout_centerVertical="true">
+                                </Spinner>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:padding="16dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <customfonts.MyTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Base Color"
+                                    android:textSize="16dp"
+                                    android:textColor="@color/textsub" />
+
+                                <RadioGroup android:id="@+id/inputGroupBaseColor" android:orientation="horizontal"
+                                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="false" android:layout_centerVertical="true"
+                                    android:layout_marginTop="6dp">
+
+                                    <RadioButton android:text="Monochrome" android:id="@+id/inputMonochrome" android:checked="true"
+                                        android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingRight="10dp"></RadioButton>
+                                    <RadioButton android:text="Multi Color" android:id="@+id/inputMultiColor"
+                                        android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingRight="10dp"></RadioButton>
+
+                                </RadioGroup>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_below="@+id/formSettings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="15dp">
+
+                <customfonts.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Make sure your settings match the document you are printing"
+                    android:textColor="#ccffffff"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:padding="15dp"
+                    android:layout_marginBottom="20dp" />
+
+                <Button
+                    android:id="@+id/submitDocInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ee5879"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:text="SETTING DOCUMENT INFO" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>

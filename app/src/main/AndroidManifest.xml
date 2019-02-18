@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.faisalalfareza.smartprint">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".partials.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".partials.AuthenticateActivity" />
+        <activity android:name=".partials.MenuActivity" />
+        <activity android:name=".partials.uploaddocument.UD1SearchCurrentLocationActivity" />
+        <activity android:name=".partials.uploaddocument.UD2MerchantListingByLocationActivity" />
+        <activity android:name=".partials.uploaddocument.UD3MerchantProfileAndServicesActivity" />
+        <activity android:name=".partials.uploaddocument.UD4DocumentSettingsActivity" />
+        <activity
+            android:name=".partials.uploaddocument.UD5DocumentInfoActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.GET_CONTENT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.OPENABLE" />
+
+                <data android:mimeType="*/*" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".partials.uploaddocument.UD6SummaryActivity" />
+        <activity android:name=".partials.uploaddocument.UD7FinishOrderActivity" />
+        <activity android:name=".partials.historydocument.HD1DocHistoryActivity" />
+    </application>
+
+</manifest>

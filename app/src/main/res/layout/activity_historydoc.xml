@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgmain">
+
+    <com.faisalalfareza.smartprint.SliderLayout
+        android:id="@+id/slider"
+        style="@style/AndroidImageSlider_Oval_Black"
+        android:layout_width="match_parent"
+        android:layout_height="310dp"
+        custom:pager_animation_span="1100">
+
+        <requestFocus />
+    </com.faisalalfareza.smartprint.SliderLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="310dp"
+        android:background="@drawable/uperslider">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"></include>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:padding="40dp">
+
+            <customfonts.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Merchant Listing"
+                android:textColor="#fff"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <customfonts.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="All available merchant in your current location"
+                android:textColor="#ccffffff"
+                android:textSize="18dp" />
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--********SLIDER**********-->
+
+            <LinearLayout
+                android:id="@+id/haircut"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="261dp"
+                android:background="@drawable/bg_list_rect"
+                android:elevation="4dp"
+                android:orientation="vertical">
+
+                <!--*****HAIR CUT********
+                android:layout_marginTop="261dp"-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/roundedrect"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <customfonts.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="AVAILABLE MERCHANT(S)"
+                        android:textColor="@color/textsub"
+                        android:textSize="@dimen/text" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:layout_width="17dp"
+                                android:layout_height="17dp"
+                                android:layout_gravity="right"
+                                android:src="@drawable/clock" />
+                        </FrameLayout>
+
+                        <customfonts.MyTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.2"
+                            android:gravity="right"
+                            android:text="30 mins"
+                            android:textColor="@color/textsub"
+                            android:textSize="@dimen/text" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <com.faisalalfareza.smartprint.ExpandableHeightListView
+                    android:id="@+id/haircut_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </com.faisalalfareza.smartprint.ExpandableHeightListView>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingTop="30dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:scrollbars="vertical"
+        android:visibility="visible"
+        android:fillViewport="true"
+        android:background="@drawable/uperslider"
+        tools:context=".partials.MenuActivity"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ProfileDescLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="40dp">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:layout_marginBottom="25dp">
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentTop="true"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    android:gravity="center">
+
+                    <customfonts.MyTextView
+                        android:text="Are You Sure ?"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fff"
+                        android:textSize="25dp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_gravity="center_vertical" />
+
+                    <customfonts.MyTextView
+                        android:text="Gotta leave? Don’t love us anymore?"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ccffffff"
+                        android:textSize="20dp"
+                        android:gravity="center" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:paddingRight="10dp">
+
+                    <Button
+                        android:id="@+id/action_logout"
+                        android:text="Okay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ee5879"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"
+                         />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp">
+
+                    <Button
+                        android:id="@+id/action_close"
+                        android:text="Close"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:textColor="#ee5879"
+                        android:textStyle="bold"
+                         />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
